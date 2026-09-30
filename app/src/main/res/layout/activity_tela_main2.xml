@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- Na Tela 2 não exigimos o EditText do nome, apenas a pergunta -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A qual país pertence esta bandeira?"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Imagem da bandeira do Japão (certifique-se de guardar o ficheiro como japao no drawable) -->
+    <ImageView
+        android:id="@+id/imgBandeira"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:src="@drawable/japao"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Opções de resposta para o Japão -->
+    <RadioGroup
+        android:id="@+id/radioGroupOpcoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp">
+
+        <RadioButton
+            android:id="@+id/rbOpcao1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brasil"/>
+
+        <RadioButton
+            android:id="@+id/rbOpcao2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Japão"/>
+
+        <RadioButton
+            android:id="@+id/rbOpcao3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Egito"/>
+
+        <RadioButton
+            android:id="@+id/rbOpcao4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arábia Saudita"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAvancar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Próximo"/>
+
+</LinearLayout>
