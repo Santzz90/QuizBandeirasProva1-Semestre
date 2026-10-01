@@ -38,7 +38,7 @@ public class TelaMainActivity3 extends AppCompatActivity {
 
                 RadioButton rbSelecionado = findViewById(selectedId);
 
-                // Resposta correta: Egito[cite: 1]
+
                 if (rbSelecionado.getText().toString().equals("Egito")) {
                     pontuacaoAtual += 3;
                 } else {

@@ -17,14 +17,14 @@ public class TelaMainActivity5 extends AppCompatActivity {
         txtPontuacao = findViewById(R.id.txtPontuacao);
         txtDesempenho = findViewById(R.id.txtDesempenho);
 
-        // Recupera os dados enviados pela tela anterior
+
         String nome = getIntent().getStringExtra("NOME_USUARIO");
         int pontuacaoFinal = getIntent().getIntExtra("PONTUACAO_ATUAL", 0);
 
         txtNomeFinal.setText("Participante: " + nome);
         txtPontuacao.setText("Pontuação: " + pontuacaoFinal);
 
-        // Mensagens oficiais exigidas na prova de acordo com a pontuação[cite: 1]
+
         String mensagem = "";
         if (pontuacaoFinal == 12) {
             mensagem = "Você é um verdadeiro mestre da Vexilologia";
