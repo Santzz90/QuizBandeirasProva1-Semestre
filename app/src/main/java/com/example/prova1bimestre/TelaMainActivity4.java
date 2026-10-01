@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class TelaMainActivity4 extends AppCompatActivity {
 
     private Button btnAvancar;
-    private RadioGroup radioGroupOpcoes; // <-- ADICIONE ESTA LINHA AQUI
+    private RadioGroup radioGroupOpcoes;
     private String nome;
     private int pontuacaoAtual;
 
@@ -38,7 +38,7 @@ public class TelaMainActivity4 extends AppCompatActivity {
 
                 RadioButton rbSelecionado = findViewById(selectedId);
 
-                // Resposta correta: Arábia Saudita[cite: 1]
+
                 if (rbSelecionado.getText().toString().equals("Arábia Saudita")) {
                     pontuacaoAtual += 3;
                 } else {
